@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Registro">
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPerfil"
+        android:layout_marginTop="20dp"
+        android:hint="Nombre..."
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtApellidos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombre"
+        android:layout_marginTop="20dp"
+        android:hint="Apellidos"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtApellidos"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Fecha De Nacimiento"
+        android:inputType="date"
+        android:maxLines="1"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtGenero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtFecha"
+        android:layout_marginTop="20dp"
+        android:hint="Genero"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtGenero"
+        android:layout_marginTop="20dp"
+        android:hint="Numero"
+        android:numeric="decimal"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/txtEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNumero"
+        android:layout_marginTop="20dp"
+        android:hint="Estado"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEstado"
+        android:layout_marginTop="20dp"
+        android:hint="Correo Electronico"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtCorreo"
+        android:layout_marginTop="20dp"
+        android:hint="Contraseña"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtContraseña"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"
+        android:text="Registrarse" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAtras"
+        android:text="Atras"
+        android:layout_below="@+id/txtContraseña"
+        android:layout_toRightOf="@+id/btnRegistrar"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="@dimen/grid_item_image_size"
+        android:layout_height="@dimen/grid_item_image_size"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/grid_item_text_size"
+        android:src="@mipmap/ic_perfil2" />
+
+
+
+
+
+</RelativeLayout>

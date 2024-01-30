@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_Usuario">
+
+    <ImageView
+        android:id="@+id/ivPerfil"
+        android:layout_width="@dimen/grid_item_image_size"
+        android:layout_height="@dimen/grid_item_image_size"
+        android:layout_below="@id/toolbarPerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/ic_perfil2" />
+
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPerfil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Jhonatan "
+
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/txtApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ivPerfil"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/txtNombre"
+        android:text="Sosa "
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/txtEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNombre"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Puebla-Necaxa"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="?colorPrimary" />
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabsPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtEstado"
+        android:layout_marginTop="20dp" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pagerPerfil"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabsPerfil"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+
+
+
+</RelativeLayout>
